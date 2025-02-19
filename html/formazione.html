@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formazione SSC Napoli</title>
+  <link rel="icon" href="../img/logo/favicon-32x32.png" type="image/x-icon">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- CSS personalizzato -->
+  <style>
+    /* Sfondo della pagina */
+    body {
+      background: url('../img/stadio/stadio-napoli-maradona-vista-interna-head-1920x1024.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .pagina {
+      padding-top: 20px;
+    }
+    /* Contenitore per la formazione */
+    .campo {
+      margin: 20px auto;
+      max-width: 900px;
+      /* Non impostare uno sfondo qui per evitare duplicazioni */
+    }
+    /* Stile per ogni giocatore */
+    .player {
+      margin: 10px 0;
+    }
+    .player img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .player img:hover {
+      transform: scale(1.1);
+    }
+    .player span {
+      display: block;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+    /* Stili per le modali */
+    .modal-body img {
+      max-width: 300px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pagina container">
+    <h1>Formazione SSC Napoli</h1>
+    <!-- Bottone "Torna alla Home" -->
+<div class="container mt-4">
+  <a href="../index.html" class="btn btn-primary">Torna alla Home</a>
+</div>
+
+    <div class="campo">
+      <!-- RIGA 1: Portiere -->
+      <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/meret.jpg" alt="Alex Meret" class="playerImage"
+              data-name="Alex Meret"
+              data-role="Portiere"
+              data-birth="22 marzo 1993"
+              data-stats="Presenze: 40; Clean Sheets: 15; Goal: 0"
+              data-transfer="Trasferito dall'Udinese al Napoli nel 2019">
+            <span>Alex Meret</span>
+          </div>
+        </div>
+      </div>
+      <!-- RIGA 2: Difensori (4 giocatori) -->
+      <div class="row">
+        <!-- Di Lorenzo -->
+        <div class="col-3 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/di_lorenzo.jpg" alt="Giovanni Di Lorenzo" class="playerImage"
+              data-name="Giovanni Di Lorenzo"
+              data-role="Difensore / Capitano"
+              data-birth="4 agosto 1993"
+              data-stats="Presenze: 120; Goal: 5; Assist: 7"
+              data-transfer="Trasferito dall'Empoli al Napoli nel 2019">
+            <span>Di Lorenzo</span>
+          </div>
+        </div>
+        <!-- Rahmani -->
+        <div class="col-3 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/rahmani.jpg" alt="Amir Rrahmani" class="playerImage"
+              data-name="Amir Rrahmani"
+              data-role="Difensore"
+              data-birth="24 Febbraio 1994"
+              data-stats="Presenze: 50; Goal: 0; Assist: 1"
+              data-transfer="Trasferito dal Verona al Napoli nel 2020">
+            <span>Rahmani</span>
+          </div>
+        </div>
+        <!-- Buongiorno -->
+        <div class="col-3 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/buongiorno.jpg" alt="Koffi Djidji" class="playerImage"
+              data-name="Koffi Djidji"
+              data-role="Difensore"
+              data-birth="Data non disponibile"
+              data-stats="Presenze: 30; Goal: 0; Assist: 0"
+              data-transfer="Trasferito dal Torino al Napoli nel 2024">
+            <span>Buongiorno</span>
+          </div>
+        </div>
+        <!-- Olivera -->
+        <div class="col-3 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/olivera.png" alt="Mathías Olivera" class="playerImage"
+              data-name="Mathías Olivera"
+              data-role="Difensore"
+              data-birth="31 Ottobre 1997"
+              data-stats="Presenze: 20; Goal: 1; Assist: 2"
+              data-transfer="Trasferito dal Getafe al Napoli nel 2022">
+            <span>Olivera</span>
+          </div>
+        </div>
+      </div>
+      <!-- RIGA 3: Centrocampisti (3 giocatori) -->
+      <div class="row">
+        <div class="col-4 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/mctominay.jpg" alt="Scott McTominay" class="playerImage"
+              data-name="Scott McTominay"
+              data-role="Centrocampista"
+              data-birth="8 Dicembre 1996"
+              data-stats="Presenze: 100; Goal: 8; Assist: 10"
+              data-transfer="Trasferito dal Manchester United al Napoli nel 2024">
+            <span>McTominay</span>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/lobotka.png" alt="Stanislav Lobotka" class="playerImage"
+              data-name="Stanislav Lobotka"
+              data-role="Centrocampista"
+              data-birth="25 Novembre 1994"
+              data-stats="Presenze: 60; Goal: 4; Assist: 3"
+              data-transfer="Trasferito dal Celta Vigo al Napoli nel 2018">
+            <span>Lobotka</span>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/anguissa.png" alt="André Zambo Anguissa" class="playerImage"
+              data-name="André Zambo Anguissa"
+              data-role="Centrocampista"
+              data-birth="16 Novembre 1995"
+              data-stats="Presenze: 80; Goal: 2; Assist: 5"
+              data-transfer="Trasferito al Napoli dal Fulham nel 2019">
+            <span>Anguissa</span>
+          </div>
+        </div>
+      </div>
+      <!-- RIGA 4: Attaccanti (3 giocatori) -->
+      <div class="row">
+        <div class="col-4 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/politano.png" alt="Matteo Politano" class="playerImage"
+              data-name="Matteo Politano"
+              data-role="Attaccante"
+              data-birth="3 Agosto 1993"
+              data-stats="Presenze: 70; Goal: 15; Assist: 8"
+              data-transfer="Trasferito dal Inter al Napoli nel 2020">
+            <span>Politano</span>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/lukaku.jpg" alt="Romelu Lukaku" class="playerImage"
+              data-name="Romelu Lukaku"
+              data-role="Attaccante"
+              data-birth="13 Maggio 1993"
+              data-stats="Presenze: 90; Goal: 30; Assist: 5"
+              data-transfer="Trasferito al Napoli nel 2024">
+            <span>Lukaku</span>
+          </div>
+        </div>
+        <div class="col-4 d-flex justify-content-center">
+          <div class="player">
+            <img src="../img/calciatori/png/neres.jpg" alt="David Neres" class="playerImage"
+              data-name="David Neres"
+              data-role="Attaccante"
+              data-birth="3 Marzo 1997"
+              data-stats="Presenze: 40; Goal: 10; Assist: 6"
+              data-transfer="Arrivato dall'Ajax nel 2024">
+            <span>Neres</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal unificato -->
+  <div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content text-dark">
+        <div class="modal-header">
+          <h5 class="modal-title" id="playerModalLabel"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Chiudi">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" alt="" class="img-fluid mb-3">
+          <p id="modalRole"></p>
+          <p id="modalBirth"></p>
+          <p id="modalStats"></p>
+          <p id="modalTransfer"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script per gestire il modal -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.playerImage').click(function() {
+        var name = $(this).data('name');
+        var role = $(this).data('role');
+        var birth = $(this).data('birth');
+        var stats = $(this).data('stats');
+        var transfer = $(this).data('transfer');
+        var src = $(this).attr('src');
+
+        $('#playerModalLabel').text(name);
+        $('#modalImage').attr('src', src);
+        $('#modalRole').html('<strong>Ruolo:</strong> ' + role);
+        $('#modalBirth').html('<strong>Data di nascita:</strong> ' + birth);
+        $('#modalStats').html('<strong>Statistiche:</strong> ' + stats);
+        $('#modalTransfer').html('<strong>Trasferimenti:</strong> ' + transfer);
+
+        // Apri la modale unificata
+        $('#playerModal').modal('show');
+      });
+    });
+  </script>
+</body>
+</html>

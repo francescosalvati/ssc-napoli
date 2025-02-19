@@ -1,0 +1,231 @@
+/* Reset di base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stile generale */
+body {
+  background-color: #199FD6;
+  font-family: Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.8em;
+  color: #0066cc; /* Blu elegante, tema SSC Napoli */
+}
+
+/* Sezione Biografia */
+.bio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.photo {
+  flex: 1 1 300px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.photo img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.info {
+  flex: 2 1 400px;
+  padding: 20px;
+}
+
+.info h2 {
+  font-size: 1.8em;
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.info p {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* Sezioni Timeline */
+.timeline-section {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.timeline-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #0066cc;
+}
+
+/* Contenitore timeline: overflow visibile per mostrare per intero i tooltip */
+.timeline-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 0;
+  overflow: visible;
+}
+
+/* Linea di collegamento */
+.timeline-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: #0066cc;
+  z-index: 1;
+}
+
+/* Cerchi della timeline: dimensioni ridotte (60×60px) */
+.timeline-item {
+  position: relative;
+  z-index: 2;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border: 2px solid #0066cc;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: scale(1.1);
+  background: #e6f2ff;
+}
+
+/* Testo interno: nome del Club */
+.event-label {
+  font-size: 0.7em;
+  font-weight: bold;
+  text-align: center;
+  color: #0066cc;
+  padding: 2px;
+}
+
+/* Tooltip: appare sopra il cerchio con le informazioni complete */
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: #0066cc;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.75em;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 10;
+}
+
+.timeline-item:hover .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Sezione Palmares */
+.palmares {
+  margin-bottom: 40px;
+}
+
+.palmares h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #0066cc;
+}
+
+.palmares ul {
+  list-style: none;
+  padding: 0;
+}
+
+.palmares li {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* Tasto Torna alla Home */
+.home-btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-btn a {
+  display: inline-block;
+  background-color: #0066cc;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+.home-btn a:hover {
+  background-color: #0050a0;
+}
+
+/* Responsive: disposizione verticale su schermi piccoli */
+@media (max-width: 768px) {
+  .bio {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .info {
+    padding: 10px;
+  }
+  
+  .timeline-container {
+    flex-direction: column;
+  }
+  
+  .timeline-container::before {
+    display: none;
+  }
+  
+  .timeline-item {
+    margin-bottom: 20px;
+  }
+}

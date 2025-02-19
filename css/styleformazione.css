@@ -1,0 +1,69 @@
+/* Stile per la pagina */
+body {
+    background-image: url(../img/stadio/stadio-napoli-maradona-vista-interna-head-1920x1024.jpg);
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.pagina {
+    padding-top: 50px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 900px;
+}
+
+.linea {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    flex-wrap: wrap;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    text-align: center;
+}
+
+.player img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.player span {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+.player:hover img {
+    transform: scale(1.1);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 32px;
+}
+
+/* Layout specifico */
+.portiere {
+    margin-top: 20px;
+}
+
+.difensori, .centrocampisti, .attaccanti {
+    margin-top: 20px;
+}
